@@ -11,6 +11,11 @@
   margin-bottom: 1rem;
 }
 
+.Business img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .Business h2 {
   margin-bottom: .5rem;
   font-size: 1.2rem;
