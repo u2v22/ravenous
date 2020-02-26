@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from '../../logo.svg';
+// import logo from '../../logo.svg';
 import './App.css';
-import Business from '../Business/Business';
 import SearchBar from '../SearchBar/SearchBar';
 import BusinessList from '../BusinessList/BusinessList'
 
@@ -20,11 +19,14 @@ const business = {
 const businesses = [business, business, business, business, business, business];
 
 class App extends React.Component {
+  searchYelp(term, location, sortBy){
+    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`)
+  }
   render() {
     return (
       <div class="App">
       <h1>ravenous</h1>
-        <SearchBar />
+        <SearchBar searchYelp={this.searchYelp}/>
         <BusinessList businesses={businesses}/>
       </div>
     );

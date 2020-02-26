@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import './BusinessList.css'
 import Business from '../Business/Business'
 
